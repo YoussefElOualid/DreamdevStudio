@@ -1,0 +1,110 @@
+.cd-main-content{
+	padding: 90px 20px 0px 20px !important;
+	position: relative;
+}
+.browser{
+	box-shadow: 0px 1px 4px -2px ;
+	transition: .5s;
+	margin: 0px auto;
+}
+.bars{
+	height: 35px;
+	background: #ECF0F1;
+	position: relative;
+}
+.icon-browser{
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+}
+.icon-browser li{
+	display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: none;
+    z-index: 1;
+}
+.icon-browser li:nth-child(1){background: #FF4247;top: 10px;left: 20px;}
+.icon-browser li:nth-child(2){background: #98CD00;top: 10px;left: 40px;}
+.icon-browser li:nth-child(3){background: #FFBB34;top: 10px;left: 60px;}
+
+
+.browser .body{
+	height: 650px;
+min-height: 100%;
+position: relative;
+background-color: #fff;
+z-index: 2;
+-webkit-transform: translateZ(0);
+-webkit-backface-visibility: hidden;
+-webkit-transition-property: -webkit-transform;
+-moz-transition-property: -moz-transform;
+transition-property: transform;
+-webkit-transition-duration: 0.4s;
+-moz-transition-duration: 0.4s;
+transition-duration: 0.4s;
+}
+.tabs .tab{
+height: 35px;
+background: #fff;
+position: relative;
+width: 170px;
+text-align: center;
+line-height: 2;
+font-weight: 600;
+}
+.tabs .tab::after{
+	content: "x";
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+.tools-browser{
+	display: inline-flex;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 35px;
+}
+.tools-browser li:hover{
+	opacity: .9;
+	box-shadow: 0px 1px 3px -2px
+}
+.tools-browser li:active{
+	opacity: 1;
+	box-shadow: 0px 1px 3px -2px inset;
+}
+.tools-browser li{
+	border: none;
+	display: inline-block;
+	outline: 0;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 10px;
+	margin-left:  10px;
+	text-align: center;
+}
+
+.run{
+	color:  #98CD00 !important;
+}
+
+.composent{
+	position: fixed;
+	top:70px;
+	right: 0;
+	width: 300px;
+	height: calc(100% - 70px);
+	box-shadow: -2px 0px 4px -2px #504F4F;
+	background: #fff;
+	z-index: 999;
+	display: none;
+}
